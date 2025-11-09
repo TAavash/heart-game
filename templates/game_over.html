@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6 text-center">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title">Game Over!</h1>
+                <p class="card-text">Time ran out.</p>
+                <h3 class="card-text">Your Final Score: {{ score }}</h3>
+                <div class="mt-4">
+                    <a href="{{ url_for('play') }}" class="btn btn-primary">Play Again</a>
+                    <a href="{{ url_for('leaderboard') }}" class="btn btn-secondary">View Leaderboard</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

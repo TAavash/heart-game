@@ -1,0 +1,21 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    margin-top: 50px;
+}
+
+#timer {
+    font-size: 1.5rem;
+    color: #dc3545;
+}
+
+.answer-btn {
+    min-width: 60px;
+    margin: 5px;
+}
+
+.btn-toolbar {
+    justify-content: center;
+}

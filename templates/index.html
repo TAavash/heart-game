@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="jumbotron text-center">
+    <h1 class="display-4">Welcome to the Heart Game!</h1>
+    <p class="lead">A fun game to test your pattern recognition skills.</p>
+    <hr class="my-4">
+    {% if 'username' in session %}
+        <p>You are logged in as <strong>{{ session.username }}</strong>.</p>
+        <p>Your current high score is: <strong>{{ session.score }}</strong></p>
+        <a class="btn btn-primary btn-lg" href="{{ url_for('play') }}" role="button">Start Playing</a>
+        <a class="btn btn-secondary btn-lg" href="{{ url_for('logout') }}" role="button">Logout</a>
+    {% else %}
+        <p>Please log in or register to play.</p>
+        <a class="btn btn-primary btn-lg" href="{{ url_for('login') }}" role="button">Login</a>
+        <a class="btn btn-secondary btn-lg" href="{{ url_for('register') }}" role="button">Register</a>
+    {% endif %}
+</div>
+{% endblock %}
