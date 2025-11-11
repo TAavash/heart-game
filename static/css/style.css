@@ -1,21 +1,87 @@
+/* General Page Style */
 body {
-    background-color: #f8f9fa;
+    background: linear-gradient(135deg, #ffdee9, #b5fffc);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    min-height: 100vh;
 }
 
+/* Navbar */
+.navbar {
+    background-color: #ff4b5c !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand, .nav-link, .navbar-text {
+    color: white !important;
+    font-weight: 500;
+}
+
+/* Card */
 .card {
+    background: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     margin-top: 50px;
+    transition: transform 0.2s ease;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #ff4b5c;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #ff758f;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Game Elements */
 #timer {
     font-size: 1.5rem;
-    color: #dc3545;
+    color: #ff4b5c;
+    font-weight: 600;
 }
 
 .answer-btn {
     min-width: 60px;
     margin: 5px;
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.2s;
 }
 
+.answer-btn:hover {
+    background-color: #ff758f;
+    transform: scale(1.1);
+}
+
+/* Center Toolbar */
 .btn-toolbar {
     justify-content: center;
+}
+
+/* Image Styling */
+img {
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
